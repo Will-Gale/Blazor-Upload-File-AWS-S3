@@ -1,7 +1,10 @@
 ﻿@page "/UploadFile"
 
 @using System.ComponentModel.DataAnnotations
+@using Sharedlayer.Interfaces
 @using Sharedlayer.Models.Documents
+
+@inject IDocumentManager DocumentManager
 
 @rendermode InteractiveServer
 
@@ -237,12 +240,6 @@
 
             </EditForm>
 
-            <div class="mt-6 text-center w-full">
-                <a class="mx-auto w-full hover:text-gray-400" href="/Underwriter/AddProduct/5/@id">
-                    Back to previous page
-                </a>
-            </div>
-
         </div>
     </div>
 
@@ -258,8 +255,6 @@
     private InputModel Input { get; set; } = new();
 
     private string message = string.Empty;
-
-    private string 
 
     private async Task SaveDocuments()
     {

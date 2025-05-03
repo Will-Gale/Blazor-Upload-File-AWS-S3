@@ -2,7 +2,10 @@ using Amazon;
 using Amazon.Runtime;
 using Amazon.S3;
 using Blazor_Upload_File_AWS_S3.Components;
+using Blazor_Upload_File_AWS_S3.Utilities;
+using Datalayer.Data;
 using Microsoft.AspNetCore.SignalR;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Sharedlayer.Services.Files;
 using System.Runtime;
@@ -12,6 +15,12 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
+
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(connectionString));
+
+builder.Services.AddApplicationServices();
 
 // Options instance for S3 Settings
 builder.Services.Configure<S3Settings>(builder.Configuration.GetSection("S3Settings"));

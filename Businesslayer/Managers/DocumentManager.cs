@@ -1,6 +1,8 @@
 ﻿using Amazon.S3;
-using Datalayer.Models;
+using Datalayer.Data;
+using Datalayer.Data.Models;
 using Microsoft.Extensions.Options;
+using Sharedlayer.Interfaces;
 using Sharedlayer.Interfaces.Services;
 using Sharedlayer.Models.Documents;
 using Sharedlayer.Models.Result;
@@ -13,7 +15,7 @@ using System.Threading.Tasks;
 
 namespace Businesslayer.Managers
 {
-    public class DocumentManager
+    public class DocumentManager : IDocumentManager
     {
 
         private readonly ApplicationDbContext db;
@@ -91,7 +93,7 @@ namespace Businesslayer.Managers
 
             try
             {
-                await db.MP_Documents.AddAsync(save);
+                await db.Documents.AddAsync(save);
                 await db.SaveChangesAsync();
 
                 return Result<Documents>.Success(save);

@@ -9,7 +9,11 @@
   <ItemGroup>
     <PackageReference Include="AWSSDK.S3" Version="3.7.413.1" />
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="9.0.1" />
-    <PackageReference Include="Microsoft.Extensions.Options" Version="9.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="9.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Datalayer\Datalayer.csproj" />
   </ItemGroup>
 
 </Project>
