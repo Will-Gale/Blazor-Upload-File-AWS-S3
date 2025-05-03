@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazor-Upload-File-AWS-S3", "Blazor-Upload-File-AWS-S3\Blazor-Upload-File-AWS-S3.csproj", "{2222CAF2-8968-472E-8EFD-F695DA4BA1B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datalayer", "Datalayer\Datalayer.csproj", "{BFF69747-3F43-4491-A9C7-23B6F9D413DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sharedlayer", "Sharedlayer\Sharedlayer.csproj", "{920C5AF7-DB2A-442C-B787-B87FDD9AD8A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Businesslayer", "Businesslayer\Businesslayer.csproj", "{51EAA097-DB12-416A-AC14-2EB5B0261026}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2222CAF2-8968-472E-8EFD-F695DA4BA1B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2222CAF2-8968-472E-8EFD-F695DA4BA1B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2222CAF2-8968-472E-8EFD-F695DA4BA1B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2222CAF2-8968-472E-8EFD-F695DA4BA1B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFF69747-3F43-4491-A9C7-23B6F9D413DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFF69747-3F43-4491-A9C7-23B6F9D413DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFF69747-3F43-4491-A9C7-23B6F9D413DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFF69747-3F43-4491-A9C7-23B6F9D413DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{920C5AF7-DB2A-442C-B787-B87FDD9AD8A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{920C5AF7-DB2A-442C-B787-B87FDD9AD8A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{920C5AF7-DB2A-442C-B787-B87FDD9AD8A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{920C5AF7-DB2A-442C-B787-B87FDD9AD8A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51EAA097-DB12-416A-AC14-2EB5B0261026}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51EAA097-DB12-416A-AC14-2EB5B0261026}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51EAA097-DB12-416A-AC14-2EB5B0261026}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51EAA097-DB12-416A-AC14-2EB5B0261026}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
