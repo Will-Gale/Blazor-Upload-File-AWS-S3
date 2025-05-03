@@ -99,6 +99,5 @@ Make sure you apply proper authentication/authorization in production environmen
 
 ---
 
-## 📄 License
 
 MIT — feel free to use, modify, and build upon this project.
